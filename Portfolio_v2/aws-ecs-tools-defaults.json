@@ -1,0 +1,28 @@
+
+{
+    "region" : "us-west-1",
+    "profile" : "portfolio",
+    "configuration" : "Release",
+    "image-tag"     : "portfoliov2:latest",
+    "docker-build-working-dir" : "",
+    "cluster"                  : "PortfolioV2",
+    "launch-type"              : "FARGATE",
+    "launch-subnets"           : "subnet-0b25b59f5c0f51fa5,subnet-0d76a08f235c4cbdf",
+    "launch-security-groups"   : "sg-0c738cc6a14a55e84",
+    "assign-public-ip"         : true,
+    "task-definition-name"     : "Portfoliov2",
+    "task-cpu"                 : "256",
+    "task-memory"              : "512",
+    "platform-version"         : "LATEST",
+    "task-definition-task-role" : "arn:aws:iam::497975358155:role/Portfoliov2-RecipeAppIAMTaskRole35276CAE-190CCEL00IMZ0",
+    "task-execution-role"       : "Portfoliov2-RecipeAppTaskDefinitionExecutionRole3E-1RSLYNG2ZG2KI",
+    "container-name"            : "Portfoliov2",
+    "container-port-mapping"    : "80:80",
+    "container-environment-variables" : "\"ASPNETCORE_ENVIRONMENT\"=\"Production\"",
+    "skip-image-push"                 : false,
+    "cluster-service"                 : "Portfoliov2",
+    "desired-count"                   : 1,
+    "deployment-minimum-healthy-percent" : 50,
+    "deployment-maximum-percent"         : 200,
+    "vstoolkit-deployment-mode"          : "DeployService"
+}

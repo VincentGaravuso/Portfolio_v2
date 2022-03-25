@@ -3,7 +3,7 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import { RouteComponentProps, Route } from 'react-router';
 import { Link } from 'react-router-dom';
-import { Button, Card, CardBody, CardGroup, CardHeader, CardSubtitle, CardText, CardTitle, Col, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
+import { Button, Card, CardBody, CardGroup, CardHeader, CardSubtitle, CardText, CardTitle, Col, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row, Spinner } from 'reactstrap';
 import { ApplicationState } from '../store';
 import * as GitHubStore from '../store/GitHub';
 import AutoSizeInput from 'react-input-autosize';
@@ -55,7 +55,7 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
     }
 
     private populateImgSrc() {
-        if (this.props.repositories[0] && this.props.repositories[0].owner) {
+        if (this.props.repositories && this.props.repositories[0] && this.props.repositories[0].owner) {
             return this.props.repositories[0].owner.avatar_url;
         }
         else {
@@ -74,35 +74,60 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
                         <input ref={this.myref} type="text" onKeyDown={(evt) => this.handleKeyDown(evt, history)} placeholder={this.props.match.params.username} style={{ fontSize: 'x-large', marginLeft: '2px', width: '250px' }} />
                     )} />
                 </div>
-                <div style={{ marginTop: '3rem', marginBottom: '3rem' }}>
-                    <h1 id="tabelLabel" >Projects</h1>
-                </div>
             </div>
         );
     }
 
     private renderForecastsTable() {
-        console.log(this.getColor());
+        if (this.props.isLoading) {
+            return (
+                <div>
+                    <div style={{ marginTop: '3rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <Spinner>
+                            Loading
+                        </Spinner>
+                    </div>
+                </div>
+            );
+        }
         if (this.props.repositories && this.props.repositories.length > 0) {
             return (
                 <div>
-                    <Row>
-                        {this.props.repositories && this.props.repositories!.map((repo: GitHubStore.Repository) =>
+                    <div style={{ marginTop: '3rem', marginBottom: '3rem' }}>
+                        <h1 id="tabelLabel" >Projects</h1>
+                    </div>
+                    <Row style={{ margin: "auto" }}>
+                        {this.props.repositories.map((repo: GitHubStore.Repository) =>
                             <Col sm="4" key={repo.id} style={{ paddingLeft: '5px', paddingRight: '5px' }}>
-                                <Card style={{ minHeight: '20rem', marginBottom: 10 }}>
-                                    <CardHeader style={{ backgroundColor: this.getColor(), fontWeight: 'bold', color: 'black', display: 'flex', justifyContent: 'space-between' }}>
+                                <Card style={{ height: '20rem', marginBottom: 10 }}>
+                                    <CardHeader style={{ backgroundColor: 'rgb(52 137 255)', fontWeight: 'bold', color: 'white', display: 'flex', justifyContent: 'space-between' }}>
                                         <p style={{ margin: 0 }}>{repo.name.toUpperCase()}</p>
                                         <a target="_blank" href={repo.html_url}>
                                             <img style={{ width: '20px', height: '20px' }} src={require('../assets/open-new-window-icon.png')} />
                                         </a>
                                     </CardHeader>
                                     <CardBody>
-                                        <CardSubtitle className="mb-2 text-muted" tag="h6">
-                                            {repo.language}
-                                        </CardSubtitle>
-                                        <CardText>
-                                            {repo.description}
-                                        </CardText>
+                                        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-start' }}>
+                                            <CardSubtitle className="mb-2 text-muted" tag="h6">
+                                                Primary Language: {repo.language}
+                                            </CardSubtitle>
+                                        </div>
+                                        <div style={{ display: 'flex', flexDirection: 'column', marginTop: '20px' }}>
+                                            <CardSubtitle className="mb-2 text-muted" style={{ marginBottom: '0rem!important' }} tag="h6">
+                                                Description
+                                            </CardSubtitle>
+                                            <CardText>
+                                                {repo.description ? repo.description : 'N/A'}
+                                            </CardText>
+                                        </div>
+                                        <div style={{ display: 'flex', flexDirection: 'column', marginTop: '20px', fontSize: '12px', position: 'absolute', bottom: 0 }}>
+                                            <CardSubtitle className="mb-2 text-muted" tag="h7">
+                                                Size: {repo.size}MB
+                                            </CardSubtitle>
+                                            <CardSubtitle className="mb-2 text-muted" tag="h7">
+                                                Created: {new Date(repo.created_at).toLocaleDateString()} | Updated: {new Date(repo.updated_at).toLocaleDateString()}
+                                            </CardSubtitle>
+                                        </div>
                                     </CardBody>
                                 </Card>
                             </Col>)}
@@ -110,8 +135,8 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
                 </div>);
         }
         return (
-            <div>
-                <h3>Nothing to see here...</h3>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '3rem' }}>
+                <h3>Username not found...</h3>
                 <h6>(Make sure to enter a valid GitHub Username!)</h6>
             </div>
         );

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portfolio_v2", "Portfolio_v2\Portfolio_v2.csproj", "{19CE1573-7234-4793-ABEF-AFD5C0B43E90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portfolio_v2", "Portfolio_v2\Portfolio_v2.csproj", "{19CE1573-7234-4793-ABEF-AFD5C0B43E90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portfolio_API", "Portfolio_API\Portfolio_API.csproj", "{867E68AF-29C7-48E0-8F1E-4F61E758DB04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Portfolio_API", "Portfolio_API\Portfolio_API.csproj", "{5504FFA2-948F-4A89-8AD4-59B33D7D191B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{19CE1573-7234-4793-ABEF-AFD5C0B43E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19CE1573-7234-4793-ABEF-AFD5C0B43E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19CE1573-7234-4793-ABEF-AFD5C0B43E90}.Release|Any CPU.Build.0 = Release|Any CPU
-		{867E68AF-29C7-48E0-8F1E-4F61E758DB04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{867E68AF-29C7-48E0-8F1E-4F61E758DB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{867E68AF-29C7-48E0-8F1E-4F61E758DB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{867E68AF-29C7-48E0-8F1E-4F61E758DB04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5504FFA2-948F-4A89-8AD4-59B33D7D191B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5504FFA2-948F-4A89-8AD4-59B33D7D191B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5504FFA2-948F-4A89-8AD4-59B33D7D191B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5504FFA2-948F-4A89-8AD4-59B33D7D191B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

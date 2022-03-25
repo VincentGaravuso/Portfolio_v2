@@ -33,7 +33,7 @@ export const actionCreators = {
     requestUserRepositories: (username: string): AppThunkAction<KnownAction> => async (dispatch, getState) => {
         // Only load data if it's something we don't already have (and are not already loading)
         const appState = getState();
-        const url = `https://localhost:44353/api/GitHub/GetUserRepositories/?username=${username}`;
+        const url = `https://ua0t6z413c.execute-api.us-west-1.amazonaws.com/Prod/api/GitHub/GetUserRepositories/?username=${username}`;
 
         if (appState && appState.repositories && username !== appState.repositories.username) {
             console.log(url);
