@@ -41,7 +41,7 @@ namespace Portfolio_API.Controllers
                 {
                     var jsonString = await response.Content.ReadAsStringAsync();
                     var repos = JsonSerializer.Deserialize<IEnumerable<Repository>>(jsonString);
-                    
+
                     return Ok(repos);
                 }
 
