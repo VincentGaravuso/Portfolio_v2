@@ -2,11 +2,9 @@ import { History } from 'history';
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { RouteComponentProps, Route } from 'react-router';
-import { Link } from 'react-router-dom';
-import { Button, Card, CardBody, CardGroup, CardHeader, CardSubtitle, CardText, CardTitle, Col, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row, Spinner } from 'reactstrap';
+import { Card, CardBody, CardHeader, CardSubtitle, CardText, Col, Row, Spinner } from 'reactstrap';
 import { ApplicationState } from '../store';
 import * as GitHubStore from '../store/GitHub';
-import AutoSizeInput from 'react-input-autosize';
 
 // At runtime, Redux will merge together...
 type GitHubReposProps =
@@ -102,8 +100,8 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
                                 <Card style={{ height: '20rem', marginBottom: 10 }}>
                                     <CardHeader style={{ backgroundColor: 'rgb(52 137 255)', fontWeight: 'bold', color: 'white', display: 'flex', justifyContent: 'space-between' }}>
                                         <p style={{ margin: 0 }}>{repo.name.toUpperCase()}</p>
-                                        <a target="_blank" href={repo.html_url}>
-                                            <img style={{ width: '20px', height: '20px' }} src={require('../assets/open-new-window-icon.png')} />
+                                        <a target="_blank" rel="noopener noreferrer" href={repo.html_url}>
+                                            <img alt='NewWindow' style={{ width: '20px', height: '20px' }} src={require('../assets/open-new-window-icon.png')} />
                                         </a>
                                     </CardHeader>
                                     <CardBody>
@@ -121,10 +119,10 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
                                             </CardText>
                                         </div>
                                         <div style={{ display: 'flex', flexDirection: 'column', marginTop: '20px', fontSize: '12px', position: 'absolute', bottom: 0 }}>
-                                            <CardSubtitle className="mb-2 text-muted" tag="h7">
+                                            <CardSubtitle className="mb-2 text-muted">
                                                 Size: {repo.size}MB
                                             </CardSubtitle>
-                                            <CardSubtitle className="mb-2 text-muted" tag="h7">
+                                            <CardSubtitle className="mb-2 text-muted">
                                                 Created: {new Date(repo.created_at).toLocaleDateString()} | Updated: {new Date(repo.updated_at).toLocaleDateString()}
                                             </CardSubtitle>
                                         </div>

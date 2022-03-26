@@ -1,10 +1,8 @@
-import { promises } from 'fs';
 import { Action, Reducer } from 'redux';
 import { AppThunkAction } from '.';
 
 // -----------------
 // STATE - This defines the type of data maintained in the Redux store.
-
 export interface RepositoriesState {
     isLoading: boolean;
     username?: string;
@@ -33,7 +31,13 @@ export const actionCreators = {
     requestUserRepositories: (username: string): AppThunkAction<KnownAction> => async (dispatch, getState) => {
         // Only load data if it's something we don't already have (and are not already loading)
         const appState = getState();
-        const url = `https://ua0t6z413c.execute-api.us-west-1.amazonaws.com/Prod/api/GitHub/GetUserRepositories/?username=${username}`;
+        let url = ``;
+        if (process.env.NODE_ENV === 'production') {
+            url = `https://ua0t6z413c.execute-api.us-west-1.amazonaws.com/Prod/api/GitHub/GetUserRepositories/?username=${username}`;
+        }
+        else {
+            url = `http://localhost:59111/api/GitHub/GetUserRepositories/?username=${username}`;
+        }
 
         if (appState && appState.repositories && username !== appState.repositories.username) {
             console.log(url);
@@ -58,19 +62,6 @@ export const actionCreators = {
                 });
 
             dispatch({ type: 'REQUEST_USER_REPOSITORIES', username: username });
-
-            //try {
-            //    fetch(url)
-            //        .then(response => response.json() as Promise<Repository[]>)
-            //        .then(data => {
-            //            dispatch({ type: 'RECEIVE_USER_REPOSITORIES', username: username, repositories: data });
-            //        });
-
-            //    dispatch({ type: 'REQUEST_USER_REPOSITORIES', username: username });
-
-            //} catch {
-
-            //}
         }
     },
     setUsername: (username: string): AppThunkAction<KnownAction> => (dispatch, getState) => {
@@ -93,7 +84,7 @@ export const reducer: Reducer<RepositoriesState> = (state: RepositoriesState | u
                 username: action.username,
                 repositories: state.repositories,
                 isLoading: true
-            };
+            }
         case 'RECEIVE_USER_REPOSITORIES':
             // Only accept the incoming data if it matches the most recent request. This ensures we correctly
             // handle out-of-order responses.
@@ -102,8 +93,8 @@ export const reducer: Reducer<RepositoriesState> = (state: RepositoriesState | u
                     username: action.username,
                     repositories: action.repositories,
                     isLoading: false
-                };
-            }
+                }
+            } break;
         case 'SET_USERNAME_ACTION':
             if (action.username === state.username)
                 return {
