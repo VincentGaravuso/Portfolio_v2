@@ -25,8 +25,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\public\favicon.ico" />
     <None Remove="ClientApp\src\assets\open-new-window-icon.png" />
     <None Remove="ClientApp\src\components\Octocat.png" />
+    <None Remove="ClientApp\src\components\Resume.tsx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,6 +37,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="ClientApp\public\favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="ClientApp\src\assets\Octocat.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
