@@ -40,7 +40,7 @@ export const actionCreators = {
         }
 
         if (appState && appState.repositories && username !== appState.repositories.username) {
-            console.log(url);
+            console.log('API' + username);
             fetch(url)
                 .then(async response => {
                     if (response) {
@@ -62,6 +62,7 @@ export const actionCreators = {
                 });
 
             dispatch({ type: 'REQUEST_USER_REPOSITORIES', username: username });
+
         }
     },
     setUsername: (username: string): AppThunkAction<KnownAction> => (dispatch, getState) => {

@@ -1,0 +1,58 @@
+﻿.resume-body {
+    margin-top: 10rem;
+    display: flex;
+    justify-content:center;
+}
+
+.resume-download-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.resume-open-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.resume-links {
+    text-decoration:none!important;
+    margin: 1rem;
+}
+
+.resume-button {
+    width:15rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    transition: .2s;
+}
+
+.resume-text {
+    margin: 0;
+    margin-right: 5px;
+    font-size: 2rem;
+    color: white;
+}
+
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none !important;
+    color: inherit;
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+}
+
+.resume-links:hover .resume-button {
+    transition: transform .2s;
+}
+
+.resume-links:hover .resume-button,
+.resume-links .resume-button:hover {
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}

@@ -20,12 +20,12 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
 
     // This method is called when the component is first added to the document
     public componentDidMount() {
-        this.ensureDataFetched();
+        this.ensureDataFetched(true);
     }
 
     // This method is called when the route parameters change
     public componentDidUpdate() {
-        this.ensureDataFetched();
+        this.ensureDataFetched(false);
     }
 
     public render() {
@@ -37,8 +37,16 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
         );
     }
 
-    private ensureDataFetched() {
-        var username = this.props.match.params.username;
+    private ensureDataFetched(constructorCall: boolean) {
+        var username;
+        if (constructorCall) {
+            console.log('Constructor: ' + this.props.match.params.username);
+            username = this.props.match.params.username;
+        } else {
+            username = this.props.username ? this.props.username : '';
+            console.log('Routing changed: ' + username);
+        }
+
         this.props.requestUserRepositories(username);
     }
 
@@ -48,6 +56,8 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
             if (val && val !== this.props.username) {
                 history.push(`${val}`);
                 this.props.requestUserRepositories(val);
+
+                console.log('Value Entered: ' + val);
             }
         }
     }
@@ -60,9 +70,10 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
             return require('../assets/Octocat.png');
         }
     }
+
     private renderHeader() {
         return (
-            <div>
+            <div style={{ paddingTop: '100px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <img src={this.populateImgSrc()} alt={'test'} style={{ borderRadius: '50%', width: '250px', height: '250px', objectFit: 'contain', border: '3px solid #000', padding: '1px', margin: '1rem' }} />
                 </div>
@@ -123,7 +134,7 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
                                                 Size: {repo.size}MB
                                             </CardSubtitle>
                                             <CardSubtitle className="mb-2 text-muted">
-                                                Created: {new Date(repo.created_at).toLocaleDateString()} | Updated: {new Date(repo.updated_at).toLocaleDateString()}
+                                                Created: {new Date(repo.created_at).toLocaleDateString()} | Updated: {new Date(repo.pushed_at).toLocaleDateString()}
                                             </CardSubtitle>
                                         </div>
                                     </CardBody>
