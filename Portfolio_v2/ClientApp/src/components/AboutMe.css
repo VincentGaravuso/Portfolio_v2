@@ -1,0 +1,49 @@
+﻿.title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.spacer {
+    height: 5rem;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.content-container > * {
+}
+
+.about-me-img img {
+    border-radius: 5%;
+}
+.about-me-img carousel slide{
+    margin: 1rem;
+}
+.about-me-container {
+    grid-area: 1/7/1/1;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.about-me {
+    border: solid 0px black;
+    border-radius: 2%;
+    padding: 32px;
+    background: #007bff;
+    color: white;
+}
+
+.about-me-txt {
+    font-size: 1.25rem;
+}
+
+img {
+    object-fit: contain;
+}
+
+.carousel {
+    grid-area: 1/6/1/13;
+}
