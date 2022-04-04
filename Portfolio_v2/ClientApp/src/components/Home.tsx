@@ -3,12 +3,13 @@ import { connect } from 'react-redux';
 import { Button } from 'reactstrap';
 import './Home.css';
 import './Resume.css';
+import AboutMe from './AboutMe';
 
 const Home = () => (
     <div>
         <section id='home' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh', justifyContent: 'center', scrollSnapAlign: 'center' }}>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'left' }}>
-                <p className='fade-in-text-intro' style={{ fontSize: '3rem', margin: 0 }}>Hello, My name is</p>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'left', position: 'relative', bottom: '10rem' }}>
+                <p className='fade-in-text-intro' style={{ fontSize: '3rem', margin: 0 }}>Hello, my name is</p>
                 <p className='fade-in-text-name' style={{ fontSize: '4rem', color: '#4287f5', margin: 0, }}>Vinny Garavuso.</p>
                 <p className='fade-in-text-title' style={{ fontSize: '3rem', margin: 0 }}>I'm a Software Engineer.</p>
             </div>
@@ -17,10 +18,10 @@ const Home = () => (
             </div>
         </section>
         <section id='aboutMe' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh', paddingTop: '100px', scrollSnapAlign: 'center' }}>
-            <p style={{ fontSize: '3rem' }}>About Me</p>
+            <AboutMe/>
         </section>
-        <section id='portfolio' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh', paddingTop: '100px', scrollSnapAlign: 'center' }}>
-            <p style={{ fontSize: '3rem' }}>Portfolio</p>
+        <section id='thisProject' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh', paddingTop: '100px', scrollSnapAlign: 'center' }}>
+            <p style={{ fontSize: '3rem' }}>About This</p>
         </section>
         <section id='socialsAndResume' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh', paddingTop: '100px', scrollSnapAlign: 'center' }}>
             <p style={{ fontSize: '3rem' }}>Socials & Resume</p>
