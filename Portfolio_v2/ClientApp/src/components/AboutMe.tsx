@@ -12,7 +12,7 @@ const AboutMe = () => (
             <div className='about-me-container'>
                 <div className='about-me'>
                     <p className='about-me-txt'>
-                        I moved here from New York in the beginning of 2021 with my fiance Liz and our golden retriever Basil.
+                        In 2021 I moved from New York to Los Angeles with my fiancé Liz and our golden retriever Basil.
                     </p>
                     <p className='about-me-txt'>
                         I really enjoy cooking, gaming, travel and exploring new foods and restaurants around LA.

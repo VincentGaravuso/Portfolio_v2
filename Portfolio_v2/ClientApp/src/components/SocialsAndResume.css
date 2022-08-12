@@ -1,0 +1,101 @@
+﻿.title-text-socials-resume {
+    display: flex;
+    font-size: 2rem;
+    color: white;
+    background: #4287f5;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
+    -moz-box-shadow: 3px 3px 8px 1px #0000009c;
+    -webkit-box-shadow: 3px 3px 8px 1px #0000009c;
+    box-shadow: 3px 3px 8px 1px #0000009c;
+}
+.socials-and-resume-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-bottom: 3rem;
+}
+.socials-container {
+    min-width: 250px;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5%;
+}
+.resume-container {
+    min-width: 250px;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5%;
+}
+.resume-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.resume-download-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.resume-open-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.resume-links {
+}
+
+.resume-button {
+    width:7rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    transition: .2s;
+}
+
+.resume-text {
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+}
+
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none !important;
+    color: inherit;
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+}
+
+.resume-links:hover .resume-button {
+    transition: transform .2s;
+}
+
+.resume-links:hover .resume-button,
+.resume-links .resume-button:hover {
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+
+
+.contact-me-container {
+}
+
+.email-send-button-container {
+    display: flex;
+    flex-direction: row;
+    margin-top:10px;
+}
+
+.contact-me-text-area {
+    min-height: 50px;
+}

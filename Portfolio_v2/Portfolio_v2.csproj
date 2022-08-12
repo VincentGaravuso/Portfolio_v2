@@ -28,8 +28,10 @@
     <None Remove="ClientApp\public\favicon.ico" />
     <None Remove="ClientApp\src\assets\open-new-window-icon.png" />
     <None Remove="ClientApp\src\components\AboutMe.tsx" />
+    <None Remove="ClientApp\src\components\AboutThis.tsx" />
     <None Remove="ClientApp\src\components\Octocat.png" />
     <None Remove="ClientApp\src\components\Resume.tsx" />
+    <None Remove="ClientApp\src\components\SocialsAndResume.tsx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,6 +49,12 @@
     <Content Include="ClientApp\src\assets\open-new-window-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Update="ClientApp\src\components\SocialsAndResume.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

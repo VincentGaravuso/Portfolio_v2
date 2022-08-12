@@ -1,0 +1,35 @@
+﻿.title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-this-first {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.about-this-second {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.about-this-first-img {
+    background: yellow;
+    border-radius: 2%;
+}
+
+.about-this-first-text {
+    background: red;
+    border-radius: 2%;
+}
+
+.about-this-second-img {
+    background: yellow;
+    border-radius: 2%;
+}
+
+.about-this-second-text {
+    background: red;
+    border-radius: 2%;
+}
