@@ -6,13 +6,38 @@
 
 html { font-size: 14px; }
 
-@media (min-width: 768px) {
-    html { font-size: 16px; }
-}
-
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
-header{
+.mb-3 {
+    margin: 0!important;
+}
+
+header {
     position: fixed;
-    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 101;
+    -moz-box-shadow: 3px 3px 8px 1px #0000009c;
+    -webkit-box-shadow: 3px 3px 8px 1px #0000009c;
+    box-shadow: 3px 3px 8px 1px #0000009c;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 430px) {
+    header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 101;
+        -moz-box-shadow: 3px 3px 8px 1px #0000009c;
+        -webkit-box-shadow: 3px 3px 8px 1px #0000009c;
+        box-shadow: 3px 3px 8px 1px #0000009c;
+    }
 }

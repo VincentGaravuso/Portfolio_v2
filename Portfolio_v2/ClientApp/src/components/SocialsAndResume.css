@@ -1,8 +1,8 @@
 ﻿.title-text-socials-resume {
     display: flex;
     font-size: 2rem;
-    color: white;
-    background: #4287f5;
+    color: #E4DEAE;
+    background: #133A1B;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
@@ -16,7 +16,6 @@
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    margin-bottom: 3rem;
 }
 .socials-container {
     min-width: 250px;
@@ -98,4 +97,13 @@
 
 .contact-me-text-area {
     min-height: 50px;
+}
+
+
+@media (max-width: 575px) {
+    .socials-and-resume-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }

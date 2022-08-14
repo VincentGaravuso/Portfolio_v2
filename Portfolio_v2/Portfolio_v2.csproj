@@ -25,10 +25,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\public\favicon.ico" />
     <None Remove="ClientApp\src\assets\open-new-window-icon.png" />
     <None Remove="ClientApp\src\components\AboutMe.tsx" />
-    <None Remove="ClientApp\src\components\AboutThis.tsx" />
     <None Remove="ClientApp\src\components\Octocat.png" />
     <None Remove="ClientApp\src\components\Resume.tsx" />
     <None Remove="ClientApp\src\components\SocialsAndResume.tsx" />
@@ -40,15 +38,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="ClientApp\public\favicon.ico">
+    <Resource Include="ClientApp\src\assets\open-new-window-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ClientApp\src\assets\Octocat.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ClientApp\src\assets\open-new-window-icon.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ClientApp\public\favicon.ico">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="ClientApp\src\assets\Octocat.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

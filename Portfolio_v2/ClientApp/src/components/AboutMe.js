@@ -17,43 +17,53 @@ var AboutMe = function () { return (React.createElement("div", null,
         React.createElement(reactstrap_1.UncontrolledCarousel, { className: 'about-me-img', items: [
                 {
                     key: 1,
-                    src: require('../assets/food1.png')
+                    src: require('../assets/food1.png'),
+                    Text: ''
                 },
                 {
                     key: 2,
-                    src: require('../assets/travel1.png')
+                    src: require('../assets/travel1.png'),
+                    Text: ''
                 },
                 {
                     key: 3,
-                    src: require('../assets/personal1.png')
+                    src: require('../assets/personal1.jpeg'),
+                    Text: ''
                 },
                 {
                     key: 4,
-                    src: require('../assets/food2.png')
+                    src: require('../assets/food2.png'),
+                    Text: ''
                 },
                 {
                     key: 5,
-                    src: require('../assets/travel2.png')
+                    src: require('../assets/travel2.png'),
+                    Text: ''
                 },
                 {
                     key: 6,
-                    src: require('../assets/pup1.png')
+                    src: require('../assets/pup1.jpeg'),
+                    Text: ''
                 },
                 {
                     key: 7,
-                    src: require('../assets/food3.png')
+                    src: require('../assets/personal2.jpeg'),
+                    Text: ''
                 },
                 {
                     key: 8,
-                    src: require('../assets/travel3.png')
+                    src: require('../assets/travel3.png'),
+                    Text: ''
                 },
                 {
                     key: 9,
-                    src: require('../assets/pup2.png')
+                    src: require('../assets/pup2.jpeg'),
+                    Text: ''
                 },
                 {
                     key: 10,
-                    src: require('../assets/travel4.png')
+                    src: require('../assets/travel4.jpeg'),
+                    Text: ''
                 }
             ] })))); };
 exports.default = (0, react_redux_1.connect)()(AboutMe);

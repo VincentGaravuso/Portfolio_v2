@@ -10,9 +10,9 @@ const Home = () => (
     <div>
         <section id='home' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh', justifyContent: 'space-evenly', scrollSnapAlign: 'center' }}>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'left' }}>
-                <p className='fade-in-text-intro' style={{ fontSize: '3rem', margin: 0 }}>Hello, my name is</p>
-                <p className='fade-in-text-name' style={{ fontSize: '4rem', color: '#4287f5', margin: 0, }}>Vinny Garavuso.</p>
-                <p className='fade-in-text-title' style={{ fontSize: '3rem', margin: 0 }}>I'm a Software Engineer.</p>
+                <p className='fade-in-text-intro'>Hello, my name is</p>
+                <p className='fade-in-text-name'>Vinny Garavuso.</p>
+                <p className='fade-in-text-title'>I'm a Software Engineer.</p>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <img className='fade-in-scroll-icon' src={require('../assets/icons8-down-48.png')}></img>

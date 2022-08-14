@@ -12,25 +12,22 @@ export default class NavMenu extends React.PureComponent<{}, { isOpen: boolean }
     public render() {
         return (
             <header>
-                <Navbar className="navbar-expand-sm navbar-toggleable-sm mb-3" style={{background: 'white'}} light>
+                <Navbar style={{ background: '#E4DEAE', margin: '0!important' }} className="navbar-expand-sm navbar-toggleable-sm mb-3" light>
                     <Container>
                         <NavbarBrand tag={Link} to="/#home">
-                            <img src={require('../assets/icons8-home.svg')} width="30" height="30" alt=""></img>
+                            <img src={require('../assets/home-svgrepo-com.svg')} width="30" height="30" alt=""></img>
                         </NavbarBrand>
                         <NavbarToggler onClick={this.toggle} className="mr-2" />
                         <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={this.state.isOpen} navbar>
                             <ul className="navbar-nav flex-grow">
                                 <NavItem>
-                                    <NavLink tag={Link} className="text-dark" to="/#aboutMe">About Me</NavLink>
+                                    <NavLink tag={Link} style={{ color: '#011B10' }} to="/#aboutMe">About Me</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink tag={Link} className="text-dark" to="/#thisProject">About This </NavLink>
+                                    <NavLink tag={Link} style={{ color: '#011B10' }} to="/#socialsAndResume">Connect</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink tag={Link} className="text-dark" to="/#socialsAndResume">Socials & Resume</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink tag={Link} className="text-dark" to="/Projects/VincentGaravuso">More Projects</NavLink>
+                                    <NavLink tag={Link} style={{ color: '#011B10' }} to="/Projects/VincentGaravuso">Full Portfolio</NavLink>
                                 </NavItem>
                             </ul>
                         </Collapse>

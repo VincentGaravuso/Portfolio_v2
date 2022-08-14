@@ -13,7 +13,28 @@ code {
   border-color: #1861ac;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+
+#root {
+    background: #011B10;
+}
+
+
+@media only screen and (max-width: 575px) {
+
+    html {
+        scroll-behavior: auto;
+        scroll-snap-type: none;
+        overflow-x: hidden;
+    }
+
+    #root {
+        overflow-x: hidden;
+        background: #011B10;
+    }
 }

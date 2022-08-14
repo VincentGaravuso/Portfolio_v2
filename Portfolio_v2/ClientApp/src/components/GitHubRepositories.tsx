@@ -2,7 +2,7 @@ import { History } from 'history';
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { RouteComponentProps, Route } from 'react-router';
-import { Card, CardBody, CardHeader, CardSubtitle, CardText, Col, Row, Spinner } from 'reactstrap';
+import { Button, Card, CardBody, CardHeader, CardSubtitle, CardText, Col, Row, Spinner } from 'reactstrap';
 import { ApplicationState } from '../store';
 import * as GitHubStore from '../store/GitHub';
 
@@ -31,8 +31,8 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
     public render() {
         return (
             <React.Fragment>
-                {this.renderHeader()}
-                {this.renderForecastsTable()}
+                    {this.renderHeader()}
+                    {this.renderForecastsTable()}
             </React.Fragment>
         );
     }
@@ -75,12 +75,12 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
         return (
             <div style={{ paddingTop: '100px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <img src={this.populateImgSrc()} alt={'test'} style={{ borderRadius: '50%', width: '250px', height: '250px', objectFit: 'contain', border: '3px solid #000', padding: '1px', margin: '1rem' }} />
+                    <img src={this.populateImgSrc()} alt={'test'} style={{ borderRadius: '50%', width: '250px', height: '250px', objectFit: 'contain', border: '3px solid #E4DEAE', padding: '1px', margin: '1rem' }} />
                 </div>
                 <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'center' }}>
-                    <p id="tabelLabel" style={{ fontSize: 'x-large' }}>GitHub.com/</p>
+                    <p id="tabelLabel" style={{ fontSize: 'x-large', color: '#E4DEAE', margin: '0' }}>GitHub.com/</p>
                     <Route render={({ history }) => (
-                        <input ref={this.myref} type="text" onKeyDown={(evt) => this.handleKeyDown(evt, history)} placeholder={this.props.match.params.username} style={{ fontSize: 'x-large', marginLeft: '2px', width: '250px' }} />
+                        <input ref={this.myref} type="text" onKeyDown={(evt) => this.handleKeyDown(evt, history)} placeholder={this.props.match.params.username} style={{ fontSize: 'larger', marginBottom: '0', marginLeft: '5px', width: '250px', borderRadius: '5px', background: '#E4DEAE', border: 0, color: '#011B10', paddingLeft: '5px', paddingRight: '5px' }} />
                     )} />
                 </div>
             </div>
@@ -91,8 +91,8 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
         if (this.props.isLoading) {
             return (
                 <div>
-                    <div style={{ marginTop: '3rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                        <Spinner>
+                    <div style={{ marginTop: '3rem', display: 'flex', justifyContent: 'center', height: '100vh' }}>
+                        <Spinner style={{ color:'#E4DEAE' }}>
                             Loading
                         </Spinner>
                     </div>
@@ -101,31 +101,28 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
         }
         if (this.props.repositories && this.props.repositories.length > 0) {
             return (
-                <div>
-                    <div style={{ marginTop: '3rem', marginBottom: '3rem' }}>
-                        <h1 id="tabelLabel" >Projects</h1>
-                    </div>
+                <div style={{ marginTop: '2rem' }}>
                     <Row style={{ margin: "auto" }}>
                         {this.props.repositories.map((repo: GitHubStore.Repository) =>
-                            <Col sm="4" key={repo.id} style={{ paddingLeft: '5px', paddingRight: '5px' }}>
-                                <Card style={{ height: '20rem', marginBottom: 10 }}>
-                                    <CardHeader style={{ backgroundColor: 'rgb(52 137 255)', fontWeight: 'bold', color: 'white', display: 'flex', justifyContent: 'space-between' }}>
+                            <Col lg="4" key={repo.id} style={{ paddingLeft: '5px', paddingRight: '5px' }}>
+                                <Card style={{ height: '20rem', marginBottom: 10, boxShadow: '3px 3px 7px 2px #0000009c', border: 0, borderRadius: '5px'}}>
+                                    <CardHeader style={{ backgroundColor: '#133A1B', fontWeight: 'bold', color: '#E4DEAE', display: 'flex', justifyContent: 'space-between' }}>
                                         <p style={{ margin: 0 }}>{repo.name.toUpperCase()}</p>
                                         <a target="_blank" rel="noopener noreferrer" href={repo.html_url}>
-                                            <img alt='NewWindow' style={{ width: '20px', height: '20px' }} src={require('../assets/open-new-window-icon.png')} />
+                                            <img alt='NewWindow' style={{ width: '20px', height: '20px' }} src={require('../assets/new-window.svg')} />
                                         </a>
                                     </CardHeader>
-                                    <CardBody>
+                                    <CardBody style={{ background: '#E4DEAE' } }>
                                         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-start' }}>
-                                            <CardSubtitle className="mb-2 text-muted" tag="h6">
+                                            <CardSubtitle className="mb-2" style={{ color: '#011B10' }} tag="h6">
                                                 Primary Language: {repo.language}
                                             </CardSubtitle>
                                         </div>
                                         <div style={{ display: 'flex', flexDirection: 'column', marginTop: '20px' }}>
-                                            <CardSubtitle className="mb-2 text-muted" style={{ marginBottom: '0rem!important' }} tag="h6">
+                                            <CardSubtitle className="mb-2" style={{ marginBottom: '0rem!important', color: '#011B10' }} tag="h6">
                                                 Description
                                             </CardSubtitle>
-                                            <CardText>
+                                            <CardText style={{ color: '#011B10' }}>
                                                 {repo.description ? repo.description : 'N/A'}
                                             </CardText>
                                         </div>
