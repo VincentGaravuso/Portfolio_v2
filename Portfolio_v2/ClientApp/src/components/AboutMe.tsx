@@ -1,7 +1,7 @@
 ﻿import * as React from 'react';
 import { connect } from 'react-redux';
 import { UncontrolledCarousel } from 'reactstrap';
-import './AboutMe.css';
+import './css/AboutMe.css';
 const AboutMe = () => (
     <div>
         <div className='title-text'>
@@ -12,13 +12,13 @@ const AboutMe = () => (
             <div className='about-me-container'>
                 <div className='about-me'>
                     <p className='about-me-txt'>
-                        In 2021 I moved from New York to Los Angeles with my fiancé Liz and our golden retriever Basil.
+                        In 2021, I moved from New York to Los Angeles with my fiancé Liz and our golden retriever Basil.
                     </p>
                     <p className='about-me-txt'>
-                        I really enjoy cooking, gaming, travel and exploring new foods and restaurants around LA.
+                        I really enjoy cooking, gaming, travel and just getting out and trying experiencing new things.
                     </p>
                     <p className='about-me-txt'>
-                        I'm also constantly working on new projects whether it's learning new frameworks like React, creating Discord bots for my communities or learning emerging technologies like blockchain.
+                        In my free time I'm usually working on side projects like learning new frameworks, creating Discord bots for my communities and learning emerging technologies.
                     </p>
                 </div>
             </div>

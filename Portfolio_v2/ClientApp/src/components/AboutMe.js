@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var react_redux_1 = require("react-redux");
 var reactstrap_1 = require("reactstrap");
-require("./AboutMe.css");
+require("./css/AboutMe.css");
 var AboutMe = function () { return (React.createElement("div", null,
     React.createElement("div", { className: 'title-text' },
         React.createElement("p", { style: { fontSize: '3rem' } }, "About Me")),
@@ -11,9 +11,9 @@ var AboutMe = function () { return (React.createElement("div", null,
     React.createElement("div", { className: 'content-container' },
         React.createElement("div", { className: 'about-me-container' },
             React.createElement("div", { className: 'about-me' },
-                React.createElement("p", { className: 'about-me-txt' }, "In 2021 I moved from New York to Los Angeles with my fianc\u00E9 Liz and our golden retriever Basil."),
-                React.createElement("p", { className: 'about-me-txt' }, "I really enjoy cooking, gaming, travel and exploring new foods and restaurants around LA."),
-                React.createElement("p", { className: 'about-me-txt' }, "I'm also constantly working on new projects whether it's learning new frameworks like React, creating Discord bots for my communities or learning emerging technologies like blockchain."))),
+                React.createElement("p", { className: 'about-me-txt' }, "In 2021, I moved from New York to Los Angeles with my fianc\u00E9 Liz and our golden retriever Basil."),
+                React.createElement("p", { className: 'about-me-txt' }, "I really enjoy cooking, gaming, travel and just getting out and trying experiencing new things."),
+                React.createElement("p", { className: 'about-me-txt' }, "In my free time I'm usually working on side projects like learning new frameworks, creating Discord bots for my communities and learning emerging technologies."))),
         React.createElement(reactstrap_1.UncontrolledCarousel, { className: 'about-me-img', items: [
                 {
                     key: 1,

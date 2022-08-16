@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var react_redux_1 = require("react-redux");
-require("./SocialsAndResume.css");
+require("./css/SocialsAndResume.css");
 var SocialsAndResume = function () { return (React.createElement("div", null,
     React.createElement("div", { className: 'title-text' },
         React.createElement("p", { style: { fontSize: '3rem', paddingBottom: '3rem' } }, "Let's Connect")),

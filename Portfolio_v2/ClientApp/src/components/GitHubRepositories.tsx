@@ -141,7 +141,7 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
                 </div>);
         }
         return (
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '3rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', marginTop: '3rem', height: '100vh', color: '#E4DEAE' }}>
                 <h3>Username not found...</h3>
                 <h6>(Make sure to enter a valid GitHub Username!)</h6>
             </div>

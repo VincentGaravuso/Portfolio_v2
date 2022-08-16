@@ -41,21 +41,20 @@ export const actionCreators = {
 
         if (appState && appState.repositories && username !== appState.repositories.username) {
             console.log('API' + username);
-            fetch(url)
-                .then(async response => {
-                    if (response) {
-                        const data = await response.json();
+            fetch(url).then(async response => {
+                if (response) {
+                    const data = await response.json();
 
-                        if (!response.ok) {
-                            const error = (data && data.message) || response.status;
-                            dispatch({ type: 'RECEIVE_USER_REPOSITORIES', username: username, repositories: [] });
-                            return Promise.reject(error);
-                        }
-
-                        dispatch({ type: 'RECEIVE_USER_REPOSITORIES', username: username, repositories: data });
-
+                    if (!response.ok) {
+                        const error = (data && data.message) || response.status;
+                        dispatch({ type: 'RECEIVE_USER_REPOSITORIES', username: username, repositories: [] });
+                        return Promise.reject(error);
                     }
-                })
+
+                    dispatch({ type: 'RECEIVE_USER_REPOSITORIES', username: username, repositories: data });
+
+                }
+            })
                 .catch(error => {
                     console.log(error);
                     dispatch({ type: 'RECEIVE_USER_REPOSITORIES', username: username, repositories: [] });

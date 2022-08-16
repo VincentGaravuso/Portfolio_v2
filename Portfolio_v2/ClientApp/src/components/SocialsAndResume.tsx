@@ -1,10 +1,6 @@
 ﻿import * as React from 'react';
 import { connect } from 'react-redux';
-import './SocialsAndResume.css';
-import { Button, Form, Input } from 'reactstrap';
-import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
-
+import './css/SocialsAndResume.css';
 
 const SocialsAndResume = () => (
     <div>

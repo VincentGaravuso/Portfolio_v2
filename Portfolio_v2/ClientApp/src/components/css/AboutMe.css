@@ -20,9 +20,9 @@
 }
 .about-me-img carousel slide {
     margin: 1rem;
-    -moz-box-shadow: 3px 3px 11px 4px #0000009c;
-    -webkit-box-shadow: 3px 3px 11px 4px #0000009c;
-    box-shadow: 3px 3px 11px 4px #0000009c;
+    -moz-box-shadow: 6px 6px 0px 0px #E4DEAE;
+    -webkit-box-shadow: 6px 6px 0px 0px #E4DEAE;
+    box-shadow: 6px 6px 0px 0px #E4DEAE;
 }
 .about-me-container {
     grid-area: 1/7/1/1;
@@ -37,9 +37,9 @@
     padding: 32px;
     background: #E4DEAE;
     color: #011B10;
-    -moz-box-shadow: 3px 3px 11px 4px #0000009c;
-    -webkit-box-shadow: 3px 3px 11px 4px #0000009c;
-    box-shadow: 3px 3px 11px 4px #0000009c;
+    -moz-box-shadow: 6px 6px 0px 0px #133A1B;
+    -webkit-box-shadow: 6px 6px 0px 0px #133A1B;
+    box-shadow: 6px 6px 0px 0px #133A1B;
 }
 
 .about-me-txt {
@@ -53,9 +53,9 @@ img {
 .carousel {
     grid-area: 1/6/1/13;
     border-radius: 5px;
-    -moz-box-shadow: 3px 3px 11px 4px #0000009c;
-    -webkit-box-shadow: 3px 3px 11px 4px #0000009c;
-    box-shadow: 3px 3px 11px 4px #0000009c;
+    -moz-box-shadow: 6px 6px 0px 0px #E4DEAE;
+    -webkit-box-shadow: 6px 6px 0px 0px #E4DEAE;
+    box-shadow: 6px 6px 0px 0px #E4DEAE;
 }
 
 .carousel-indicators li {
@@ -79,9 +79,9 @@ img {
         padding: 14px;
         background: #E4DEAE;
         color: #011B10;
-        -moz-box-shadow: 3px 3px 11px 4px #0000009c;
-        -webkit-box-shadow: 3px 3px 11px 4px #0000009c;
-        box-shadow: 3px 3px 11px 4px #0000009c;
+        -moz-box-shadow: 6px 6px 0px 0px #133A1B;
+        -webkit-box-shadow: 6px 6px 0px 0px #133A1B;
+        box-shadow: 6px 6px 0px 0px #133A1B;
     }
 }
 
@@ -100,6 +100,8 @@ img {
     .carousel {
         grid-area: 2/2/2/12;
         border-radius: 5px;
-        box-shadow: 3px 3px 11px 4px #0000009c;
+        -moz-box-shadow: 6px 6px 0px 0px #E4DEAE;
+        -webkit-box-shadow: 6px 6px 0px 0px #E4DEAE;
+        box-shadow: 6px 6px 0px 0px #E4DEAE;
     }
 }
