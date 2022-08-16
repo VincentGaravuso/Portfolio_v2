@@ -28,7 +28,6 @@
     <None Remove="ClientApp\src\assets\open-new-window-icon.png" />
     <None Remove="ClientApp\src\components\AboutMe.tsx" />
     <None Remove="ClientApp\src\components\Octocat.png" />
-    <None Remove="ClientApp\src\components\Resume.tsx" />
     <None Remove="ClientApp\src\components\SocialsAndResume.tsx" />
   </ItemGroup>
 

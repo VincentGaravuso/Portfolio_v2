@@ -1,10 +1,9 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import './Home.css';
-import './Resume.css';
+import './css/Home.css';
 import AboutMe from './AboutMe';
 import SocialsAndResume from './SocialsAndResume';
-import GitHubRepositories from './GitHubRepositories';
+import GitHubData from './GitHubRepositories';
 
 const Home = () => (
     <div>

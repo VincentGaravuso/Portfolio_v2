@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 /*import { Link } from 'react-router-dom';*/
 import { HashLink as Link } from 'react-router-hash-link';
-import './NavMenu.css';
+import './css/NavMenu.css';
 
 export default class NavMenu extends React.PureComponent<{}, { isOpen: boolean }> {
     public state = {
