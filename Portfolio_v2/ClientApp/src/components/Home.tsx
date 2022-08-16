@@ -23,6 +23,9 @@ const Home = () => (
         <section id='socialsAndResume' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-evenly', height: '100vh', scrollSnapAlign: 'center' }}>
             <SocialsAndResume />
         </section>
+        <section id='github' style={{ scrollSnapAlign: 'start' }}>
+            <GitHubData/>
+        </section>
     </div>
 );
 

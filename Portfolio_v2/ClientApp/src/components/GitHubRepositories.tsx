@@ -40,8 +40,7 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
     private ensureDataFetched(constructorCall: boolean) {
         var username;
         if (constructorCall) {
-            console.log('Constructor: ' + this.props.match.params.username);
-            username = this.props.match.params.username;
+            username = 'vincentgaravuso';
         } else {
             username = this.props.username ? this.props.username : '';
             console.log('Routing changed: ' + username);
@@ -80,7 +79,7 @@ class GitHubRepositories extends React.PureComponent<GitHubReposProps> {
                 <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'center' }}>
                     <p id="tabelLabel" style={{ fontSize: 'x-large', color: '#E4DEAE', margin: '0' }}>GitHub.com/</p>
                     <Route render={({ history }) => (
-                        <input ref={this.myref} type="text" onKeyDown={(evt) => this.handleKeyDown(evt, history)} placeholder={this.props.match.params.username} style={{ fontSize: 'larger', marginBottom: '0', marginLeft: '5px', width: '250px', borderRadius: '5px', background: '#E4DEAE', border: 0, color: '#011B10', paddingLeft: '5px', paddingRight: '5px' }} />
+                        <input ref={this.myref} type="text" onKeyDown={(evt) => this.handleKeyDown(evt, history)} placeholder={'VincentGaravuso'} style={{ fontSize: 'larger', marginBottom: '0', marginLeft: '5px', width: '250px', borderRadius: '5px', background: '#E4DEAE', border: 0, color: '#011B10', paddingLeft: '5px', paddingRight: '5px' }} />
                     )} />
                 </div>
             </div>
