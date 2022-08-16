@@ -9,6 +9,5 @@ import './custom.css'
 export default () => (
     <Layout>
         <Route exact path='/' component={Home} />
-        <Route path='/Projects/:username?' component={GitHubData} />
     </Layout>
 );
