@@ -6,6 +6,12 @@
     color: inherit;
 }
 
+mark, .mark {
+    color: #00ae93;
+    padding: 0;
+    background-color: transparent;
+}
+
 .social-media-icon {
     transition: .2s;
 }
@@ -41,8 +47,8 @@
 
 .fade-in-text-intro {
     display: inline-block;
-    font-size: 3rem;
-    color: #B7BF96;
+    font-size: 1.5rem;
+    color: #d2d3d3;
     margin: 0;
     animation: fadeIn linear 1s;
     -webkit-animation: fadeIn linear 1s;
@@ -53,18 +59,20 @@
 .fade-in-text-title {
     display: inline-block;
     font-size: 3rem;
-    color: #B7BF96;
+    color: #d2d3d3;
     margin: 0;
     animation: fadeIn linear 1s;
     -webkit-animation: fadeIn linear 1s;
     -moz-animation: fadeIn linear 1s;
     -o-animation: fadeIn linear 1s;
+    max-width: 800px;
 }
 
 .fade-in-text-name {
     display: inline-block;
-    font-size: 4rem;
-    color: #E4DEAE;
+    font-weight: bold;
+    font-size: 6rem;
+    color: #06b4e9;
     margin: 0;
     animation: fadeIn linear 1s;
     -webkit-animation: fadeIn linear 1s;
@@ -135,7 +143,6 @@
     .fade-in-text-intro {
         display: inline-block;
         font-size: 2rem;
-        color: #B7BF96;
         margin: 0;
         animation: fadeIn linear 1s;
         -webkit-animation: fadeIn linear 1s;
@@ -146,7 +153,6 @@
     .fade-in-text-title {
         display: inline-block;
         font-size: 2rem;
-        color: #B7BF96;
         margin:0;
         animation: fadeIn linear 1s;
         -webkit-animation: fadeIn linear 1s;
@@ -157,7 +163,6 @@
     .fade-in-text-name {
         display: inline-block;
         font-size: 3rem;
-        color: #E4DEAE;
         margin: 0;
         animation: fadeIn linear 1s;
         -webkit-animation: fadeIn linear 1s;

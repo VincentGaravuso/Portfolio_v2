@@ -5,7 +5,7 @@ import './css/AboutMe.css';
 const AboutMe = () => (
     <div>
         <div className='title-text'>
-            <p style={{ fontSize: '3rem' }}>About Me</p>
+            <p>About Me</p>
         </div>
         <div className='spacer'></div>
         <div className='content-container'>

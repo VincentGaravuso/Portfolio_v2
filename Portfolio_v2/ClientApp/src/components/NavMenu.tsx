@@ -12,7 +12,7 @@ export default class NavMenu extends React.PureComponent<{}, { isOpen: boolean }
     public render() {
         return (
             <header>
-                <Navbar style={{ background: '#E4DEAE', margin: '0!important' }} className="navbar-expand-sm navbar-toggleable-sm mb-3" light>
+                <Navbar style={{ background: '#d2d3d3', margin: '0!important' }} className="navbar-expand-sm navbar-toggleable-sm mb-3" light>
                     <Container>
                         <NavbarBrand tag={Link} to="/#home">
                             <img src={require('../assets/home-svgrepo-com.svg')} width="30" height="30" alt=""></img>
@@ -21,13 +21,13 @@ export default class NavMenu extends React.PureComponent<{}, { isOpen: boolean }
                         <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={this.state.isOpen} navbar>
                             <ul className="navbar-nav flex-grow">
                                 <NavItem>
-                                    <NavLink tag={Link} style={{ color: '#011B10' }} to="/#aboutMe">About Me</NavLink>
+                                    <NavLink tag={Link} to="/#aboutMe">About Me</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink tag={Link} style={{ color: '#011B10' }} to="/#socialsAndResume">Connect</NavLink>
+                                    <NavLink tag={Link} to="/#socialsAndResume">Connect</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink tag={Link} style={{ color: '#011B10' }} to="#github">Projects</NavLink>
+                                    <NavLink tag={Link} to="#github">Projects</NavLink>
                                 </NavItem>
                             </ul>
                         </Collapse>

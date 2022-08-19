@@ -11,7 +11,7 @@ const Home = () => (
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'left' }}>
                 <p className='fade-in-text-intro'>Hello, my name is</p>
                 <p className='fade-in-text-name'>Vinny Garavuso.</p>
-                <p className='fade-in-text-title'>I'm a Software Engineer.</p>
+                <p className='fade-in-text-title'>I'm a <mark>Software Engineer</mark> currently working at <a href='https://www.firstam.com/'>First American</a></p>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <img className='fade-in-scroll-icon' src={require('../assets/icons8-down-48.png')}></img>

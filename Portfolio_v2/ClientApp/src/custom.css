@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #0366d6;
+    color: #8f6fd0;
 }
 
 code {
@@ -29,7 +29,7 @@ html {
 
 
 #root {
-    background: #011B10;
+    background: #2e3032;
 }
 
 
@@ -43,6 +43,6 @@ html {
 
     #root {
         overflow-x: hidden;
-        background: #011B10;
+        background: #2e3032;
     }
 }
