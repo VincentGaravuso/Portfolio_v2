@@ -1,16 +1,15 @@
 ﻿.title-text-socials-resume {
     display: flex;
     font-size: 2rem;
-    color: #E4DEAE;
-    background: #133A1B;
+    color: #2e3032;
+    background: #d2d3d3;
     flex-direction: column;
     align-items: center;
-    border-radius: 5px;
     padding-bottom: 5px;
     margin-bottom: 1rem;
-    -moz-box-shadow: 4px 4px 0px 0px #E4DEAE;
-    -webkit-box-shadow: 4px 4px 0px 0px #E4DEAE;
-    box-shadow: 4px 4px 0px 0px #E4DEAE;
+    box-shadow: 4px 4px 0px 0px #02b3e8;
+    -moz-box-shadow: 4px 4px 0px 0px #02b3e8;
+    -webkit-box-shadow: 4px 4px 0px 0px #02b3e8;
 }
 .socials-and-resume-container {
     display: flex;

@@ -2,7 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #E4DEAE;
+    color: #d2d3d3;
+    font-weight: bold;
+    font-size: 3rem;
 }
 .spacer {
     height: 5rem;
@@ -12,17 +14,12 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
-.content-container > * {
-}
 
-.about-me-img img {
-    border-radius: 5px;
-}
 .about-me-img carousel slide {
     margin: 1rem;
-    -moz-box-shadow: 6px 6px 0px 0px #E4DEAE;
-    -webkit-box-shadow: 6px 6px 0px 0px #E4DEAE;
-    box-shadow: 6px 6px 0px 0px #E4DEAE;
+    -moz-box-shadow: 6px 6px 0px 0px #01af96;
+    -webkit-box-shadow: 6px 6px 0px 0px #01af96;
+    box-shadow: 6px 6px 0px 0px #01af96;
 }
 .about-me-container {
     grid-area: 1/7/1/1;
@@ -33,13 +30,12 @@
     justify-content: center;
 }
 .about-me {
-    border-radius: 5px;
     padding: 32px;
-    background: #E4DEAE;
-    color: #011B10;
-    -moz-box-shadow: 6px 6px 0px 0px #133A1B;
-    -webkit-box-shadow: 6px 6px 0px 0px #133A1B;
-    box-shadow: 6px 6px 0px 0px #133A1B;
+    background: #d2d3d3;
+    color: #2e3032;
+    -moz-box-shadow: 6px 6px 0px 0px #916ed2;
+    -webkit-box-shadow: 6px 6px 0px 0px #916ed2;
+    box-shadow: 6px 6px 0px 0px #916ed2;
 }
 
 .about-me-txt {
@@ -52,10 +48,9 @@ img {
 
 .carousel {
     grid-area: 1/6/1/13;
-    border-radius: 5px;
-    -moz-box-shadow: 6px 6px 0px 0px #E4DEAE;
-    -webkit-box-shadow: 6px 6px 0px 0px #E4DEAE;
-    box-shadow: 6px 6px 0px 0px #E4DEAE;
+    -moz-box-shadow: 6px 6px 0px 0px #01af96;
+    -webkit-box-shadow: 6px 6px 0px 0px #01af96;
+    box-shadow: 6px 6px 0px 0px #01af96;
 }
 
 .carousel-indicators li {
@@ -75,13 +70,7 @@ img {
 @media only screen and (max-width: 767px) {
 
     .about-me {
-        border-radius: 5px;
         padding: 14px;
-        background: #E4DEAE;
-        color: #011B10;
-        -moz-box-shadow: 6px 6px 0px 0px #133A1B;
-        -webkit-box-shadow: 6px 6px 0px 0px #133A1B;
-        box-shadow: 6px 6px 0px 0px #133A1B;
     }
 }
 
@@ -99,9 +88,5 @@ img {
 
     .carousel {
         grid-area: 2/2/2/12;
-        border-radius: 5px;
-        -moz-box-shadow: 6px 6px 0px 0px #E4DEAE;
-        -webkit-box-shadow: 6px 6px 0px 0px #E4DEAE;
-        box-shadow: 6px 6px 0px 0px #E4DEAE;
     }
 }

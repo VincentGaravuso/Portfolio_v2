@@ -1,0 +1,149 @@
+﻿.header-container{
+    padding-top: 100px;
+}
+
+.profile-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .profile-pic img {
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+        border: 3px solid #8f69d1;
+        padding: 1px;
+        margin: 1rem;
+    }
+
+.git-url-container {
+    display: flex;
+    justify-content: center;
+}
+
+    .git-url-container p {
+        font-size: x-large;
+        color: #d1d2d2;
+        margin: 0;
+    }
+
+    .git-url-container input {
+        font-size: larger;
+        margin-bottom: 0;
+        margin-left: 5px;
+        width: 250px;
+        background: #d1d2d2;
+        border: 0;
+        color: #2e3032;
+        padding-left: 5px;
+        padding-right: 5px;
+        box-shadow: 4px 4px 0px 0px #02b3e8;
+        -moz-box-shadow: 4px 4px 0px 0px #02b3e8;
+        -webkit-box-shadow: 4px 4px 0px 0px #02b3e8;
+    }
+
+.loading-spinner-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+    .loading-spinner-container spinner {
+        color: #d1d2d2;
+    }
+
+.project-display-container {
+    margin-top: 2rem;
+}
+
+.row {
+    margin: auto;
+}
+
+.col {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card {
+    height: 20rem;
+    margin-bottom: 10px;
+    border-radius: 0;
+    border: 0;
+    box-shadow: 4px 4px 0px 0px #01ad98;
+    -moz-box-shadow: 4px 4px 0px 0px #01ad98;
+    -webkit-box-shadow: 4px 4px 0px 0px #01ad98;
+}
+
+.card-header {
+    background-color: #545759;
+    font-weight: bold;
+    color: #d2d3d3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-header p {
+    margin: 0;
+}
+
+.card-header img{
+    width: 20px;
+    height: 20px;
+}
+
+.card-body{
+    background: #d2d3d3;
+}
+
+.card-description-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.card-subtitle {
+    color: #011b10;
+    font-weight: bold;
+}
+
+.card-description-text {
+    color: #011b10;
+}
+
+.card-footer-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+}
+
+.user-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+    height: 100vh;
+    color: #E4DEAE;
+}
+
+.spinner-border {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    border: 0.25em solid #05ae96;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner-border .75s linear infinite;
+}
+
+.card-header:first-child {
+    border-radius: 0
+}
+

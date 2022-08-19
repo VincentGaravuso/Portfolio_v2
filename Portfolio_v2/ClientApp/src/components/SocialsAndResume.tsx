@@ -15,11 +15,11 @@ const SocialsAndResume = () => (
                 <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly' }}>
                     <a className='social-media' target="_blank" rel="noopener noreferrer" href='https://github.com/VincentGaravuso/'>
                         <img alt='GitHub' className='social-media-icon' style={{ width: '60px', height: '60px' }} src={require('../assets/icons8-github.svg')} />
-                        <p style={{ color: '#E4DEAE' }}>GitHub</p>
+                        <p style={{ color: '#d2d3d3' }}>GitHub</p>
                     </a>
                     <a className='social-media' target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/vincentgaravuso/'>
                         <img alt='LinkedIn' className='social-media-icon' style={{ width: '60px', height: '60px' }} src={require('../assets/icons8-linkedin.svg')} />
-                        <p style={{ color: '#E4DEAE' }}>LinkedIn</p>
+                        <p style={{ color: '#d2d3d3' }}>LinkedIn</p>
                     </a>
                 </div>
             </div>
@@ -31,11 +31,11 @@ const SocialsAndResume = () => (
                 <div className='resume-body'>
                     <a className='social-media' target="_blank" rel="noopener noreferrer" href={require('../assets/Vincent_Garavuso_Resume.pdf')}>
                         <img alt='New Tab' className='social-media-icon' style={{ width: '60px', height: '60px', padding: '8px' }} src={require('../assets/new-window.svg')} />
-                        <p style={{ color:'#E4DEAE' }}>Open</p>
+                        <p style={{ color:'#d2d3d3' }}>Open</p>
                     </a>
                     <a className='social-media' download='Vincent_Garavuso_Resume.pdf' href={require('../assets/Vincent_Garavuso_Resume.pdf')}>
                         <img alt='Download' className='social-media-icon' style={{ width: '60px', height: '60px', padding: '8px' }} src={require('../assets/download-icon.svg')} />
-                        <p style={{ color: '#E4DEAE' }}>Download</p>
+                        <p style={{ color: '#d2d3d3' }}>Download</p>
                     </a>
                 </div>
             </div>

@@ -6,7 +6,7 @@ var reactstrap_1 = require("reactstrap");
 require("./css/AboutMe.css");
 var AboutMe = function () { return (React.createElement("div", null,
     React.createElement("div", { className: 'title-text' },
-        React.createElement("p", { style: { fontSize: '3rem' } }, "About Me")),
+        React.createElement("p", null, "About Me")),
     React.createElement("div", { className: 'spacer' }),
     React.createElement("div", { className: 'content-container' },
         React.createElement("div", { className: 'about-me-container' },
