@@ -87,6 +87,19 @@ mark, .mark {
     -o-animation: fadeIn linear 1s;
 }
 
+.blue-blob {
+    position: absolute;
+    z-index: 1;
+}
+.green-blob {
+    position: absolute;
+    z-index: 2;
+}
+.purple-blob {
+    position: absolute;
+    z-index: 3;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;

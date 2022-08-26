@@ -1,33 +1,54 @@
-﻿.title-text-socials-resume {
+﻿.title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #d2d3d3;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+hr {
+    background-color: #051c32;
+    margin: 0;
+}
+
+.title-text-socials-resume {
     display: flex;
     font-size: 2rem;
-    color: #2e3032;
-    background: #d2d3d3;
+    color: #d2d3d3;
     flex-direction: column;
     align-items: center;
     padding-bottom: 5px;
-    margin-bottom: 1rem;
-    box-shadow: 4px 4px 0px 0px #02b3e8;
-    -moz-box-shadow: 4px 4px 0px 0px #02b3e8;
-    -webkit-box-shadow: 4px 4px 0px 0px #02b3e8;
 }
+
 .socials-and-resume-container {
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 .socials-container {
     min-width: 250px;
     padding: 1rem;
     margin: 1rem;
     border-radius: 5%;
 }
+
 .resume-container {
     min-width: 250px;
     padding: 1rem;
     margin: 1rem;
     border-radius: 5%;
 }
+
+.email-me-container {
+    padding: 1rem;
+    margin: 1rem;
+    min-width: 250px;
+    border-radius: 5%;
+}
+
 .resume-body {
     display: flex;
     flex-direction: row;
@@ -48,10 +69,10 @@
 }
 
 .resume-button {
-    width:7rem;
+    width: 7rem;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     transition: .2s;
 }
 
@@ -91,7 +112,7 @@
 .email-send-button-container {
     display: flex;
     flex-direction: row;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 .contact-me-text-area {

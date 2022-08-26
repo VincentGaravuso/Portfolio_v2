@@ -1,5 +1,5 @@
 ﻿.header-container{
-    padding-top: 100px;
+    margin-top: 15rem;
 }
 
 .profile-pic {
@@ -71,14 +71,15 @@
     height: 20rem;
     margin-bottom: 10px;
     border-radius: 0;
+    background-color: #0000002e;
     border: 0;
-    box-shadow: 4px 4px 0px 0px #01ad98;
-    -moz-box-shadow: 4px 4px 0px 0px #01ad98;
-    -webkit-box-shadow: 4px 4px 0px 0px #01ad98;
+    box-shadow: 0px 0px 0px 1px #d2d3d3;
+    -moz-box-shadow: 0px 0px 0px 1px #d2d3d3;
+    -webkit-box-shadow: 0px 0px 0px 1px #d2d3d3;
 }
 
 .card-header {
-    background-color: #545759;
+    background-color: #01070e;
     font-weight: bold;
     color: #d2d3d3;
     display: flex;
@@ -94,8 +95,7 @@
     height: 20px;
 }
 
-.card-body{
-    background: #d2d3d3;
+.card-body {
 }
 
 .card-description-container {
@@ -105,12 +105,12 @@
 }
 
 .card-subtitle {
-    color: #011b10;
+    color: #d2d3d3;
     font-weight: bold;
 }
 
 .card-description-text {
-    color: #011b10;
+    color: #d2d3d3;
 }
 
 .card-footer-container {

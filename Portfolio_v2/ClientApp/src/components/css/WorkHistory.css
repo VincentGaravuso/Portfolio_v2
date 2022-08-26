@@ -1,0 +1,71 @@
+﻿.work-history-container p {
+    color: #d2d3d3;
+}
+
+hr {
+    background-color: #916cd0;
+    margin: 0;
+}
+
+.work-history-title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #d2d3d3;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.work-history-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-container {
+    max-width: 690px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.nai-container {
+    max-width: 690px;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+.job-title-text {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.job-duration-title {
+    font-size: .8rem;
+}
+
+.company-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.company-name-text {
+    font-size: 2rem;
+    margin: 0;
+}
+
+ul {
+    padding-inline-start: 20px;
+    margin-right: 50px;
+}
+
+li {
+    color: #00b2e5;
+    margin-bottom: 5px;
+}
+
+    li p {
+        color: #d2d3d3;
+        margin: 0;
+    }
