@@ -3,80 +3,57 @@ import { connect } from 'react-redux';
 import { UncontrolledCarousel } from 'reactstrap';
 import './css/AboutMe.css';
 const AboutMe = () => (
-    <div>
-        <div className='title-text'>
-            <p>About Me</p>
-        </div>
-        <div className='spacer'></div>
-        <div className='content-container'>
-            <div className='about-me-container'>
-                <div className='about-me'>
-                    <p className='about-me-txt'>
-                        In 2021, I moved from New York to Los Angeles with my fiancé Liz and our golden retriever Basil.
-                    </p>
-                    <p className='about-me-txt'>
-                        I really enjoy cooking, gaming, travel and just getting out and trying experiencing new things.
-                    </p>
-                    <p className='about-me-txt'>
-                        In my free time I'm usually working on side projects like learning new frameworks, creating Discord bots for my communities and learning emerging technologies.
-                    </p>
+    <div className='about-me'>
+        <div className='about-me-text-container'>
+            <div className='about-me-title'>
+                <p>About Me</p>
+                <hr/>
+            </div>
+            <div>
+                <p>
+                    Hi, I’m Vinny. I’m a Software Engineer with professional
+                    experience in <mark>aerospace</mark>, <mark>social</mark>, and <mark>financial </mark>
+                    companies large and small.
+                </p>
+                <p>
+                    I take pride in solving puzzles like turning business
+                    rules into code, orchestrating processes, and designing UI’s.
+                </p>
+                <p>
+                    As a software engineer, it is my job to find the best
+                    tools to solve the problems at hand. Throughout my career,
+                    I’ve worked professionally across many technologies to
+                    accomplish this. Here’s a list of my favorites:
+                </p>
+                <div className='tech-list-container'>
+                    <ul>
+                        <li><p>C#</p></li>
+                        <li><p>Java</p></li>
+                        <li><p>Python</p></li>
+                        <li><p>C++</p></li>
+                    </ul>
+                    <ul>
+                        <li><p>C</p></li>
+                        <li><p>SQL</p></li>
+                        <li><p>NoSQL</p></li>
+                        <li><p>Node</p></li>
+                    </ul>
+                    <ul>
+                        <li><p>React</p></li>
+                        <li><p>Angular</p></li>
+                        <li><p>TypeScript</p></li>
+                        <li><p>AWS</p></li>
+                    </ul>
+                    <ul>
+                        <li><p>Azue</p></li>
+                        <li><p>Docker</p></li>
+                        <li><p>Terraform</p></li>
+                        <li><p>Jenkins</p></li>
+                    </ul>
                 </div>
             </div>
-            <UncontrolledCarousel className='about-me-img'
-                items={[
-                    {
-                        key: 1,
-                        src: require('../assets/food1.png'),
-                        Text: ''
-                    },
-                    {
-                        key: 2,
-                        src: require('../assets/travel1.png'),
-                        Text: ''
-                    },
-                    {
-                        key: 3,
-                        src: require('../assets/personal1.jpeg'),
-                        Text: ''
-                    },
-                    {
-                        key: 4,
-                        src: require('../assets/food2.png'),
-                        Text: ''
-                    },
-                    {
-                        key: 5,
-                        src: require('../assets/travel2.png'),
-                        Text: ''
-                    },
-                    {
-                        key: 6,
-                        src: require('../assets/pup1.jpeg'),
-                        Text: ''
-                    },
-                    {
-                        key: 7,
-                        src: require('../assets/personal2.jpeg'),
-                        Text: ''
-                    },
-                    {
-                        key: 8,
-                        src: require('../assets/travel3.png'),
-                        Text: ''
-                    },
-                    {
-                        key: 9,
-                        src: require('../assets/pup2.jpeg'),
-                        Text: ''
-                    },
-                    {
-                        key: 10,
-                        src: require('../assets/travel4.jpeg'),
-                        Text: ''
-                    }
-                ]}
-            />
-        </div>
+        </div >
+
     </div>
 );
 

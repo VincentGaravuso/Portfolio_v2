@@ -2,69 +2,59 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
 var react_redux_1 = require("react-redux");
-var reactstrap_1 = require("reactstrap");
 require("./css/AboutMe.css");
-var AboutMe = function () { return (React.createElement("div", null,
-    React.createElement("div", { className: 'title-text' },
-        React.createElement("p", null, "About Me")),
-    React.createElement("div", { className: 'spacer' }),
-    React.createElement("div", { className: 'content-container' },
-        React.createElement("div", { className: 'about-me-container' },
-            React.createElement("div", { className: 'about-me' },
-                React.createElement("p", { className: 'about-me-txt' }, "In 2021, I moved from New York to Los Angeles with my fianc\u00E9 Liz and our golden retriever Basil."),
-                React.createElement("p", { className: 'about-me-txt' }, "I really enjoy cooking, gaming, travel and just getting out and trying experiencing new things."),
-                React.createElement("p", { className: 'about-me-txt' }, "In my free time I'm usually working on side projects like learning new frameworks, creating Discord bots for my communities and learning emerging technologies."))),
-        React.createElement(reactstrap_1.UncontrolledCarousel, { className: 'about-me-img', items: [
-                {
-                    key: 1,
-                    src: require('../assets/food1.png'),
-                    Text: ''
-                },
-                {
-                    key: 2,
-                    src: require('../assets/travel1.png'),
-                    Text: ''
-                },
-                {
-                    key: 3,
-                    src: require('../assets/personal1.jpeg'),
-                    Text: ''
-                },
-                {
-                    key: 4,
-                    src: require('../assets/food2.png'),
-                    Text: ''
-                },
-                {
-                    key: 5,
-                    src: require('../assets/travel2.png'),
-                    Text: ''
-                },
-                {
-                    key: 6,
-                    src: require('../assets/pup1.jpeg'),
-                    Text: ''
-                },
-                {
-                    key: 7,
-                    src: require('../assets/personal2.jpeg'),
-                    Text: ''
-                },
-                {
-                    key: 8,
-                    src: require('../assets/travel3.png'),
-                    Text: ''
-                },
-                {
-                    key: 9,
-                    src: require('../assets/pup2.jpeg'),
-                    Text: ''
-                },
-                {
-                    key: 10,
-                    src: require('../assets/travel4.jpeg'),
-                    Text: ''
-                }
-            ] })))); };
+var AboutMe = function () { return (React.createElement("div", { className: 'about-me' },
+    React.createElement("div", { className: 'about-me-text-container' },
+        React.createElement("div", { className: 'about-me-title' },
+            React.createElement("p", null, "About Me"),
+            React.createElement("hr", null)),
+        React.createElement("div", null,
+            React.createElement("p", null,
+                "Hi, I\u2019m Vinny. I\u2019m a Software Engineer with professional experience in ",
+                React.createElement("mark", null, "aerospace"),
+                ", ",
+                React.createElement("mark", null, "social"),
+                ", and ",
+                React.createElement("mark", null, "financial "),
+                "companies large and small."),
+            React.createElement("p", null, "I take pride in solving puzzles like turning business rules into code, orchestrating processes, and designing UI\u2019s."),
+            React.createElement("p", null, "As a software engineer, it is my job to find the best tools to solve the problems at hand. Throughout my career, I\u2019ve worked professionally across many technologies to accomplish this. Here\u2019s a list of my favorites:"),
+            React.createElement("div", { className: 'tech-list-container' },
+                React.createElement("ul", null,
+                    React.createElement("li", null,
+                        React.createElement("p", null, "C#")),
+                    React.createElement("li", null,
+                        React.createElement("p", null, "Java")),
+                    React.createElement("li", null,
+                        React.createElement("p", null, "Python")),
+                    React.createElement("li", null,
+                        React.createElement("p", null, "C++"))),
+                React.createElement("ul", null,
+                    React.createElement("li", null,
+                        React.createElement("p", null, "C")),
+                    React.createElement("li", null,
+                        React.createElement("p", null, "SQL")),
+                    React.createElement("li", null,
+                        React.createElement("p", null, "NoSQL")),
+                    React.createElement("li", null,
+                        React.createElement("p", null, "Node"))),
+                React.createElement("ul", null,
+                    React.createElement("li", null,
+                        React.createElement("p", null, "React")),
+                    React.createElement("li", null,
+                        React.createElement("p", null, "Angular")),
+                    React.createElement("li", null,
+                        React.createElement("p", null, "TypeScript")),
+                    React.createElement("li", null,
+                        React.createElement("p", null, "AWS"))),
+                React.createElement("ul", null,
+                    React.createElement("li", null,
+                        React.createElement("p", null, "Azue")),
+                    React.createElement("li", null,
+                        React.createElement("p", null, "Docker")),
+                    React.createElement("li", null,
+                        React.createElement("p", null, "Terraform")),
+                    React.createElement("li", null,
+                        React.createElement("p", null, "Jenkins")))))))); };
 exports.default = (0, react_redux_1.connect)()(AboutMe);
 //# sourceMappingURL=AboutMe.js.map
