@@ -11,16 +11,17 @@ const WorkHistory = () => (
         <div className='work-history-container'>
             <div className='fa-container'>
                 <p className='company-name-text'>First American</p>
-                <p className='job-title-text'>Software Engineer</p>
+                <p className='job-title-text'>Full Stack Software Engineer</p>
                 <p className='job-duration-title'>November 2020 - Present</p>
                 <div>
                     <ul>
-                        <li><p>End to end ownership of deliverables to production -
+                        <li><p>End-to-end ownership of deliverables to production -
                             including analysis, planning, model, design, code, test,
                             document and push to production.</p></li>
-                        <li><p>Refactored document matching logic giving a per-order
-                            performance increase of 50%</p></li>
-                        <li><p>Stand up and manage AWS resources with Terraform.</p></li>
+                        <li><p>Re-skin customer facing website to bring at a glance summaries and responsive design.</p></li>
+                        <li><p>Introduce architectural improvements, boosting developer efficiency and product reliability.</p></li>
+                        <li><p>Build out environment monitoring tools by leveraging AWS CloudWatch and Splunk</p></li>
+                        <li><p>Design and implement ETL pipelines for processing tens of millions of records from multiple sources utilizing PySpark, Snowflake, S3, and AWS Glue.</p></li>
                     </ul>
                 </div>
             </div>
@@ -31,9 +32,10 @@ const WorkHistory = () => (
                 <p className='job-duration-title'>Jan 2019 - November 2020</p>
                 <div>
                     <ul>
-                        <li><p>Lorem ipsum Lorem ipsum Lorem ipsum</p></li>
-                        <li><p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p></li>
-                        <li><p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p></li>
+                        <li><p>Implement decoupled and clean architecture for applications.</p></li>
+                        <li><p>Create UI controller for proprietary hardware giving engineers the ability to test remotely.</p></li>
+                        <li><p>Develop tools to automatically enforce coding standards on commits.</p></li>
+                        <li><p>Revamp in-house web application for hardware management.</p></li>
                     </ul>
                 </div>
             </div>
